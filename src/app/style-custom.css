@@ -1,0 +1,115 @@
+/* Estilos personalizados */
+
+/* Variáveis de cores */
+:root {
+  --primary-color: #4f46e5;
+  --primary-hover: #4338ca;
+  --secondary-color: #64748b;
+  --success-color: #22c55e;
+  --danger-color: #ef4444;
+  --warning-color: #f59e0b;
+  --background-light: #f9fafb;
+  --text-primary: #111827;
+  --text-secondary: #4b5563;
+}
+aside {
+    height: 100vh !important;
+}
+li a.flex:hover {
+  transform: translateX(10px);
+  /* transition: all .5s ease; */
+  background-color: transparent;
+  box-shadow: 0 0 20px 6px rgb(135 29 205 / 75%);
+}
+
+li a.flex {
+  border: solid 1px #2d3e55;
+  transition: all .5s ease;
+}
+/* Estilos base */
+body {
+  background-color: var(--background-light);
+  color: var(--text-primary);
+}
+
+/* Botões personalizados */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+}
+
+/* Cards e containers */
+.custom-card {
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+
+/* Animações */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .custom-card {
+    padding: 1rem;
+  }
+}
+
+/* Formulários personalizados */
+.custom-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  transition: border-color 0.2s;
+}
+
+.custom-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.1);
+}
+
+/* Status badges */
+.status-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.status-pending {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.status-inactive {
+  background-color: var(--secondary-color);
+  color: white;
+}
