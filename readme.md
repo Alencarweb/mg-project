@@ -1,4 +1,3 @@
-# [nome-do-projeto]
 
 ## Visão Geral
 Este projeto foi desenvolvido para [breve descrição do que o projeto faz e seu propósito]. Ele tem como objetivo fornecer [objetivos específicos ou funcionalidades da aplicação].
